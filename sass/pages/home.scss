@@ -1,0 +1,40 @@
+@use "../global";
+@use "../components/upcoming-sermon";
+@use "../components/blog-card";
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+
+.nav__btn {
+  @include mxn.btn(20px 48px);
+}
+
+#hero {
+  padding: 128px 0;
+}
+
+.hero__link {
+  @include mxn.btn;
+}
+
+.advantages {
+  padding: 128px 0;
+  &__header {
+    @include mxn.header;
+  }
+}
+
+.upcoming__sermons {
+  &__header {
+    @include mxn.header(32) {
+      h2 {
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.register__btn {
+  @extend %secondary-btn;
+}
