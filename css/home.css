@@ -478,7 +478,7 @@ header {
   background-color: black;
 }
 
-.dark * {
+.dark .dark * {
   color: white !important;
 }
 

@@ -270,9 +270,13 @@ header {
           backdrop-filter: blur(40px);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> e897fab8843dfc461344b1f3bf57bdd1d5672f4b
+=======
+
+>>>>>>> 5b2394b841a16c0c51c6f4475dff997118da5122
 #footer {
   padding: 64px 0px 64px;
   background: #161722;
@@ -305,6 +309,7 @@ header {
   }
 }
 .wrapper__left {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 .hero__container {
@@ -368,6 +373,8 @@ header {
 
 .contact__forms {
 >>>>>>> e897fab8843dfc461344b1f3bf57bdd1d5672f4b
+=======
+>>>>>>> 5b2394b841a16c0c51c6f4475dff997118da5122
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,6 +846,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   gap: 24px;
 }
@@ -938,6 +946,8 @@ img {
   border-radius: 12px;
   background: var(--primary, #FFD2A4);
 >>>>>>> e897fab8843dfc461344b1f3bf57bdd1d5672f4b
+=======
+>>>>>>> 5b2394b841a16c0c51c6f4475dff997118da5122
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
@@ -1210,5 +1220,9 @@ img {
   gap: 16px;
   border-radius: 12px;
   background: var(--primary, #FFD2A4);
+<<<<<<< HEAD
 }}
 >>>>>>> e897fab8843dfc461344b1f3bf57bdd1d5672f4b
+=======
+}
+>>>>>>> 5b2394b841a16c0c51c6f4475dff997118da5122
