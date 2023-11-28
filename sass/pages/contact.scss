@@ -1,1 +1,268 @@
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mxn;
+@use "../utils/helpers" as hlp;
 @use "../global";
+
+
+.hero__container{
+    position: relative;
+    img{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    div{
+        position: absolute;
+        top: 10px;
+        left: 30px;
+
+       
+
+
+        h4{
+            color: var.$primary-color;
+        }
+
+        h1{
+            color: var.$white-color;
+            text-transform: uppercase;
+            font-size: 16px;
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width:500px){
+            top:70px;
+            left: 50px;
+
+            h1{
+                font-size: 24px;
+                max-width: 209px;
+            }
+        }
+
+        @media (min-width:800px){
+            left:70px ;
+            top: 90px;
+            h1{
+                font-size: 48px;
+                max-width: 409px;
+            }
+        }
+
+        @media (min-width:1200px){
+            left:180px;
+            top: 160px;
+            h1{
+                font-size: 48px;
+                max-width: 409px;
+            }
+        }
+
+        
+    }
+}
+
+
+#contact{
+    padding-top: 80px;
+    padding-bottom: 128px;
+    background-color: #F5F2F0;
+}
+
+.contact{
+    &__forms{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        label{
+            align-self: flex-start;
+            color: var(--DARK, #1E1B1B);
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.24px;
+            text-transform: uppercase;
+        }
+
+        input{
+            padding: 20px;
+            display: inline-block;
+            width: 100%;
+            border-radius: 4px;
+            border: none;
+            color: #161722;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        textarea{
+            padding: 24px 24px 72px 24px;
+            width: 100%;
+            border-radius: 4px;
+            border: none;
+            color: #161722;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        button{
+            @include mxn.btn;
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    &__infos{
+        padding-top: 100px;
+        p{
+            margin-top: 32px;
+            color: #1E1B1B;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        h3{
+            color: var(--Black, #161722);
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.24px;
+            text-transform: uppercase;
+            max-width: 280px;
+            margin-top: 8px;
+            
+        }
+
+
+        @media (min-width:300px){
+            h3{
+                font-size: 24px;
+                max-width: 260px;
+            }
+        }
+
+        .contact__medias{
+            margin-top: 8px;
+        }
+
+        .contact__medias a{
+            margin-right: 32px;
+        }
+    }
+
+    @media(min-width: 800px){
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            .contact__forms{
+                 width: 100%;
+            }
+
+            .contact__infos{
+                width: 100%;
+                padding-top: 0px;
+                padding-left: 128px;
+            }
+    }
+}
+
+
+
+/*love and compassion*/
+
+.compassion{
+    padding-top: 128px;
+    padding-bottom: 128px;
+    &__infos{
+        text-align: center;
+        h6{
+            @extend %title-6;
+        }
+
+        h2{
+            @extend %title-3;
+        }
+
+        p{
+            @extend %text;
+        }   
+    }
+    
+
+    &__cards{
+        div{
+            padding-top: 10px;
+            padding-bottom: 50px;
+            margin-bottom: 70px;
+            @extend %flex-center;
+            flex-direction: column;
+            transition: 0.5s;
+            overflow: hidden;
+            cursor: pointer;
+            &:hover{
+                transform: translateY(100px);
+
+                a{
+                    transform: translateY(10px)
+                }
+
+                img{
+                    transform: scale(1);
+                }
+            }
+
+            a{
+                @include mxn.btn;
+                margin-bottom: 48px;
+                transform: translateY(-100px);
+            }
+
+            img{
+                transform: scale(0.8);
+                width: 300px;
+                max-width: 100%;
+                transition: 0.5s;
+            }
+        }
+
+        @media(min-width:900px){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    
+
+    &__bottom{
+        text-align: center;
+        h6{
+            @extend %title-6;
+        }
+        h2{
+            @extend %title-3
+        }
+
+        p{
+            @extend %text;
+            margin-right: auto;
+            margin-left: auto;
+            width: 512px;
+            max-width: 100%;
+            
+        }
+
+        a{  display: inline-block;
+            margin-top: 24px;
+            color: #161722;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+}
+
