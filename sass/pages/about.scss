@@ -225,7 +225,7 @@ header {
 }
 .benefits__title
 {
-    margin-bottom: 200px;
+    // margin-bottom: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,6 +257,533 @@ header {
         }
     }
 }
+.benefits__contents
+{
+    .first__content
+    {
+        width: 100%;
+        height: 390px;
+        display: flex;
+        margin-top: 100px;
+        @media(max-width:684px)
+        {
+            height: 800px;
+            flex-direction: column;
+        }
+        .first__content__text , .first__content__img
+        {
+        width: 50%;
+        height: 100%;
+        @media(max-width:684px)
+        {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h4
+        {
+            color: var(--Black, #161722);
+            font-family: Roboto Condensed;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 44px; 
+            letter-spacing: -0.32px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        p
+        {
+            color: var(--Black, #161722);
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px; 
+        }
+        }
+        .first__content__img
+        {
+            background: url(../../images/about__images/chruch.1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media(max-width:684px)
+            {
+                background: url(../../images/about__images/chruch.1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                img
+                {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .last__content
+    {
+        width: 100%;
+        height: 390px;
+        display: flex;
+        margin-top: 100px;
+        @media(max-width:684px)
+        {
+            height: 800px;
+            flex-direction: column-reverse;
+        }
+        .first__content__text , .first__content__img
+        {
+        width: 50%;
+        height: 100%;
+        @media(max-width:684px)
+        {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        h4
+        {
+            color: var(--Black, #161722);
+            font-family: Roboto Condensed;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 44px; 
+            letter-spacing: -0.32px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            padding-left: 30px;
+
+        }
+        p
+        {
+            color: var(--Black, #161722);
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px; 
+            padding-left: 30px;
+
+        }
+        }
+        .first__content__img
+        {
+            background: url(../../images/about__images/church.3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media(max-width:684px)
+            {
+                background: url(../../images/about__images/church.3.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                img
+                {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .third__content
+    {
+        width: 100%;
+        height: 390px;
+        display: flex;
+        margin-top: 100px;
+        @media(max-width:684px)
+        {
+            height: 800px;
+            flex-direction: column;
+        }
+        .first__content__text , .first__content__img
+        {
+        width: 50%;
+        height: 100%;
+        @media(max-width:684px)
+        {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h4
+        {
+            color: var(--Black, #161722);
+            font-family: Roboto Condensed;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 44px; 
+            letter-spacing: -0.32px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        p
+        {
+            color: var(--Black, #161722);
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px; 
+        }
+        }
+        .first__content__img
+        {
+            background: url(../../images/about__images/church.2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media(max-width:684px)
+            {
+                background: url(../../images/about__images/church.2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                img
+                {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+.fourth__content
+{
+    width: 100%;
+    height: 390px;
+    display: flex;
+    margin-top: 100px;
+    @media(max-width:684px)
+    {
+        height: 800px;
+        flex-direction: column-reverse;
+    }
+    .first__content__text , .first__content__img
+    {
+    width: 50%;
+    height: 100%;
+    @media(max-width:684px)
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    h4
+    {
+        color: var(--Black, #161722);
+        font-family: Roboto Condensed;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px; 
+        letter-spacing: -0.32px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        padding-left: 30px;
+
+    }
+    p
+    {
+        color: var(--Black, #161722);
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; 
+        padding-left: 30px;
+
+    }
+    }
+    .first__content__img
+    {
+        background: url(../../images/about__images/chrch.4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media(max-width:684px)
+        {
+            background: url(../../images/about__images/chrch.4.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            img
+            {
+                opacity: 0;
+            }
+        }
+    }
+}
+.first__content__text
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.last__content__text
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.team__title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 128px;
+    h4
+    {
+    color: var(--Black, #161722);
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    }
+    h2
+    {
+        color: var(--Black, #161722);
+        text-align: center;
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 64px; 
+        letter-spacing: -0.48px;
+        text-transform: uppercase;
+        margin-top: 16px;
+        margin-bottom: 64px;
+    @media(max-width:351px)
+    {
+        font-size:30px ;
+        text-align: center;
+    }
+
+    }
+}
+.team__cards
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    margin-bottom: 128px;
+    @media(max-width:900px)
+    {
+    grid-template-columns: auto auto auto;
+
+    }
+    @media(max-width:800px)
+    {
+    grid-template-columns: auto auto;
+
+    }
+    @media(max-width:500px)
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    }
+    .team__card
+    {
+        max-width: 302px;
+        height: 366px;
+        background-color:#F5F2F0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s;
+    @media(max-width:500px)
+{
+    width: 100%;
+}
+        h5
+        {
+            color: var(--Black, #161722);
+            font-family: Roboto Condensed;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.24px;
+            text-transform: uppercase;
+            margin-top: 26px;
+        }
+        p
+        {
+            color: var(--Black, #161722);
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
 
 
 
+    }
+}
+.team__card:hover
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+// footer
+#footer {
+    padding: 64px 0px 64px;
+    background: #161722;
+}
+
+.wrapper {
+    @media(min-width:280px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media(min-width:500px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__img {
+            width: 100%;
+            margin-bottom: 27px;
+        }
+
+        &__link {
+            margin-bottom: 32px;
+            font-size: 12px;
+            color: #fff;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}
+
+.wrapper__middle {
+    &__list {
+        @media(min-width:280px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @media(min-width:500px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 72px;
+        }
+    }
+
+    &__item {
+        p {
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            &__imgs {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+
+    &__link {
+        color: #fff;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}
+
+.wrapper__right {
+    @media(min-width:280px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        @media(min-width:280px) {
+            max-width: 200px;
+        }
+
+        @media(min-width:500px) {
+            max-width: 377px;
+            margin-bottom: 50px;
+        }
+
+        max-width: 377px;
+        font-size: 32px;
+        font-style: normal;
+        color: #fff;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -0.32px;
+        text-transform: uppercase;
+    }
+
+    &__form {
+        @media(min-width:280px) {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        @media(min-width:500px) {
+            display: flex;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+        }
+
+        input {
+            @media(min-width:500px) {
+                border: none;
+            }
+
+            outline: none;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 24px 100px 24px 20px;
+            background-color: transparent;
+        }
+    }
+
+    .wrapper__right__btn {
+        padding: 24px 64px;
+        align-items: center;
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        text-transform: uppercase;
+        gap: 16px;
+        border-radius: 12px;
+        background: var(--primary, #FFD2A4);
+    }
+}
