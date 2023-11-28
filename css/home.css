@@ -610,6 +610,10 @@ header {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.relevant__wrapper__card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 @media (min-width: 280px) {
   .relevant__wrapper__card {
     width: 100%;
@@ -1242,21 +1246,66 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (min-width: 280px) {
+  .share__wrapper__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .share__wrapper__card {
   padding: 48px 38px 38px;
+  border-radius: 12px;
   max-width: 302px;
-  height: 367px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background: var(--Light-orange, #FFF5EB);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
+@media (min-width: 280px) {
+  .share__wrapper__card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.share__wrapper__card:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
 .share__wrapper__card__top h6 {
   margin-bottom: 16px;
   font-family: Roboto Condensed;
   font-size: 12px;
   font-style: normal;
+  color: #DC9853;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.96px;
   text-transform: uppercase;
+}
+.share__wrapper__card__top h3 {
+  margin-bottom: 16px;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+.share__wrapper__card__top p {
+  margin-bottom: 48px;
+  max-width: 238px;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.7;
 }
