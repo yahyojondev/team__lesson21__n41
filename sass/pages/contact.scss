@@ -176,7 +176,6 @@
 
 .compassion{
     padding-top: 128px;
-    padding-bottom: 128px;
     &__infos{
         text-align: center;
         h6{
@@ -189,6 +188,9 @@
 
         p{
             @extend %text;
+            max-width: 768px;
+            margin-right: auto;
+            margin-left: auto;
         }   
     }
     
@@ -196,34 +198,21 @@
     &__cards{
         div{
             padding-top: 10px;
-            padding-bottom: 50px;
-            margin-bottom: 70px;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
             @extend %flex-center;
             flex-direction: column;
             transition: 0.5s;
             overflow: hidden;
             cursor: pointer;
             &:hover{
-                transform: translateY(100px);
-
-                a{
-                    transform: translateY(10px)
-                }
-
                 img{
                     transform: scale(1);
                 }
             }
-
-            a{
-                @include mxn.btn;
-                margin-bottom: 48px;
-                transform: translateY(-100px);
-            }
-
             img{
                 transform: scale(0.8);
-                width: 300px;
+                width: 500px;
                 max-width: 100%;
                 transition: 0.5s;
             }
@@ -232,36 +221,44 @@
         @media(min-width:900px){
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
         }
     }
 
     
 
     &__bottom{
-        text-align: center;
-        h6{
-            @extend %title-6;
-        }
-        h2{
-            @extend %title-3
+        padding-bottom: 128px;
+        .bottom__infos{
+            text-align: center;
+            padding-top: 60px;
+            h6{
+                @extend %title-6;
+                margin-top: 40px;
+                color: #161722;
+            }
+
+            h2{
+                @extend %title-3;
+                margin-top: 8px;
+                color: #161722;
+            }
+
+            p{
+                @extend %text;
+                margin-top: 8px;
+                color: #161722;
+            }
         }
 
-        p{
-            @extend %text;
-            margin-right: auto;
-            margin-left: auto;
-            width: 512px;
-            max-width: 100%;
-            
-        }
-
-        a{  display: inline-block;
-            margin-top: 24px;
-            color: #161722;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 16px;
+        @media(min-width:844px){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            h2 , h6 , p{
+                text-align: left;
+            }
         }
     }
 }

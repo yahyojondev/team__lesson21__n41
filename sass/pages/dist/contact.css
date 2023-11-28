@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.compassion__infos h2, .compassion__bottom h2 {
+.compassion__infos h2, .compassion__bottom .bottom__infos h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 56px;
@@ -13,7 +13,7 @@
   text-transform: uppercase;
 }
 
-.compassion__infos h6, .compassion__bottom h6 {
+.compassion__infos h6, .compassion__bottom .bottom__infos h6 {
   font-size: 16px;
   font-weight: 700;
   line-height: normalpx;
@@ -21,7 +21,7 @@
   text-transform: uppercase;
 }
 
-.compassion__infos p, .compassion__bottom p {
+.compassion__infos p, .compassion__bottom .bottom__infos p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -232,50 +232,30 @@ ul {
 /*love and compassion*/
 .compassion {
   padding-top: 128px;
-  padding-bottom: 128px;
 }
 .compassion__infos {
   text-align: center;
 }
+.compassion__infos p {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .compassion__cards div {
   padding-top: 10px;
-  padding-bottom: 50px;
-  margin-bottom: 70px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
   flex-direction: column;
   transition: 0.5s;
   overflow: hidden;
   cursor: pointer;
 }
-.compassion__cards div:hover {
-  transform: translateY(100px);
-}
-.compassion__cards div:hover a {
-  transform: translateY(10px);
-}
 .compassion__cards div:hover img {
   transform: scale(1);
 }
-.compassion__cards div a {
-  display: inline-block;
-  padding: 24px 64px;
-  border-radius: 12px;
-  border: 0;
-  transition: 0.5s;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  background-color: #ffd2a4;
-  color: #1c1d28;
-  margin-bottom: 48px;
-  transform: translateY(-100px);
-}
-.compassion__cards div a:hover {
-  background-color: #f2c79b;
-}
 .compassion__cards div img {
   transform: scale(0.8);
-  width: 300px;
+  width: 500px;
   max-width: 100%;
   transition: 0.5s;
 }
@@ -283,23 +263,36 @@ ul {
   .compassion__cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 .compassion__bottom {
+  padding-bottom: 128px;
+}
+.compassion__bottom .bottom__infos {
   text-align: center;
+  padding-top: 60px;
 }
-.compassion__bottom p {
-  margin-right: auto;
-  margin-left: auto;
-  width: 512px;
-  max-width: 100%;
-}
-.compassion__bottom a {
-  display: inline-block;
-  margin-top: 24px;
+.compassion__bottom .bottom__infos h6 {
+  margin-top: 40px;
   color: #161722;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
+}
+.compassion__bottom .bottom__infos h2 {
+  margin-top: 8px;
+  color: #161722;
+}
+.compassion__bottom .bottom__infos p {
+  margin-top: 8px;
+  color: #161722;
+}
+@media (min-width: 844px) {
+  .compassion__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .compassion__bottom h2, .compassion__bottom h6, .compassion__bottom p {
+    text-align: left;
+  }
 }
