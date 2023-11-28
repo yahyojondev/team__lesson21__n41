@@ -1,3 +1,10 @@
+const loading = document.getElementById("loading");
+
+const loadingDuration = 1000; // 1s
+
+setTimeout(() => {
+  loading.classList.add("loading-none");
+}, loadingDuration); 
 window.addEventListener("scroll", function () {
   toggleBacktop();
 });
