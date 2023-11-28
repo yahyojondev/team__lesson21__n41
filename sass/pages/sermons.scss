@@ -1,3 +1,461 @@
 @use "../global";
 @use "../components/upcoming-sermon";
 @use "../components/sermon-card";
+
+
+body{
+    overflow-x:  hidden;
+}
+
+$black-text-color: #232536;
+$black-text-2: #161722;
+
+.bg-img{
+    width: 100%;
+    height: 432px;
+    background-image: url(/images/U_b-eSviHvs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center;
+
+    .bg-img-title{
+       padding-top: 160px;
+       padding-left: 60px;
+
+       .bg-text{
+        color: $black-text-color;
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+       }
+
+       .bg-title{
+        margin-top: 16px;
+        color: $black-text-color;
+
+        /* Heading h2 */
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px; /* 133.333% */
+        letter-spacing: -0.48px;
+        text-transform: uppercase;
+       }
+    }
+}
+
+.maket-title{
+    text-align: center;
+    margin-top: 120px;
+
+    .maket-text{
+        color: $black-text-2;
+
+        /* Label 02 */
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .title-h2{
+        // width: 554px;
+        margin-top: 16px;
+        color: $black-text-2;
+        text-align: center;
+        
+        /* Heading h2 */
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px; /* 133.333% */
+        letter-spacing: -0.48px;
+        text-transform: uppercase;
+    }
+}
+
+@mixin maket-text (){
+    color: $black-text-2;
+
+    /* Heading h5 */
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    text-transform: uppercase;    
+}
+
+@mixin moon () {
+    color: $black-text-2;
+
+        /* Label 02 */
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+}
+
+@mixin card-text () {
+    // margin-left: 89px;
+    background: var(--Gradient, linear-gradient(110deg, #A54E2B -53.83%, #DC9853 62.61%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Cap 03 */
+    font-family: Roboto Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+}
+
+@mixin card-title () {
+    // margin-top: 16px;
+    // margin-left: 89px;
+    width: 210px;
+    color: $black-text-2;
+
+    /* Heading h5 */
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+}
+
+@mixin box-text () {
+    // margin-top: 16px;
+    //     margin-left: 89px;
+        color: $black-text-2;
+
+        /* Paragraph */
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+}
+
+@mixin data (){
+    // margin-top: 32px;
+    // margin-left: 30px;
+    color: $black-text-2;
+
+    /* Paragraph */
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.box-maket{
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+    // margin-left: 90px;
+
+    .card-maket{
+        // margin-right: 50px;
+        // margin-bottom: 120px;
+        width: 435px;
+        height: 512px;
+        flex-shrink: 0;
+        background:#FFF5EB;
+    }
+
+    .media{
+        display: flex;
+    }
+
+    .num{
+        margin-top: 32px;
+        margin-left: 378px;
+        color: $black-text-2;
+
+        /* Heading h5 */
+        font-family: Roboto Condensed;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.24px;
+        text-transform: uppercase;
+    }
+    .moon{
+        margin-left: 378px;
+        color: $black-text-2;
+
+        /* Label 02 */
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .card-text{
+        margin-left: 89px;
+        background: var(--Gradient, linear-gradient(110deg, #A54E2B -53.83%, #DC9853 62.61%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* Cap 03 */
+        font-family: Roboto Condensed;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+    }
+
+    .card-title{
+        margin-top: 16px;
+        margin-left: 89px;
+        width: 210px;
+        color: $black-text-2;
+
+        /* Heading h5 */
+        font-family: Roboto Condensed;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.24px;
+        text-transform: uppercase;
+    }
+
+    .box-text{
+        // width: 256px;
+        margin-top: 16px;
+        margin-left: 89px;
+        color: $black-text-2;
+
+        /* Paragraph */
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+
+    .data{
+        margin-top: 32px;
+        margin-left: 30px;
+        color: $black-text-2;
+
+        /* Paragraph */
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+
+    .icon{
+        margin-top: 40px;
+        margin-left: 89px;
+    }
+
+    .btn-maket{
+        margin-top: 32px;
+        margin-left: 89px;
+        width: 156px;
+        height: 65px;
+        background: $black-text-2;
+        border-radius: 12px;
+        border: none;
+        color: #fff;
+
+        &:hover{
+            color: #d68c2b;
+            transition: all 0.5s;
+        }
+    }
+}
+
+@mixin grid () {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@mixin grid-1 () {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 900px) {
+    .box-maket{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .box-maket{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .box-maket{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .box-maket{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .foto{
+        width: 435px;
+        height: 256px;
+    }
+}
+
+.maket-link{
+    position: relative;
+    top: 48px;
+    left: 1080px;
+    color: $black-text-2;
+
+    /* Label 01 */
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+
+    &:hover{
+        color: #ecb67f;
+    }
+}
+
+.paragref{
+    margin-top: 208px;
+    color: $black-text-2;
+    text-align: center;
+    
+    /* Heading h2 */
+    font-family: Roboto Condensed;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 133.333% */
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+}
+
+.sermon-box{
+    margin-top: 64px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.sermon-card{
+    width: 302px;
+    height: 454px;
+    flex-shrink: 0;
+    background:#FFF5EB;
+
+    // &:hover{
+    //     width: 302px;
+    //     height: 16px;
+    //     flex-shrink: 0;
+    //     background: #FFD0A0;
+    // }
+}
+
+.big-title{
+    @include maket-text();
+    margin-top: 24px;
+    margin-left: 251px;
+}
+
+.sermon-moon{
+    @include moon();
+    margin-left: 251px;
+}
+
+.sermon-paragrif{
+    @include card-text();
+    margin-left: 40px;
+}
+
+.big-title-1{
+    @include card-title();
+    margin-top: 16px;
+    margin-left: 40px;
+}
+
+.sermon-text{
+    @include box-text();
+    margin-top: 16px;
+    margin-left: 40px;
+}
+
+.tent{
+    @include data();
+    margin-top: 32px;
+    margin-left: 20px;
+}
+
+.medium{
+    display: flex;
+}
+
+.icons{
+    margin-top: 34px;
+    margin-left: 42px;
+}
+
+@media screen and (max-width: 900px) {
+    .sermon-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sermon-box{
+        @include grid();
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sermon-box{
+        @include grid-1();
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sermon-box{
+        @include grid-1();
+    }
+    .sermon-card{
+        position: relative;
+        left: 69px;
+    }
+}
