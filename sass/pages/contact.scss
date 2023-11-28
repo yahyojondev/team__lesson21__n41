@@ -22,6 +22,11 @@ header {
     background-color: black !important;
 }
 
+.dark main #contact .contact__forms input ,
+.dark main #contact .contact__forms  button{
+    border: 2px solid #fff;
+}
+
 .dark * {
     color: white !important;
 }
@@ -99,6 +104,8 @@ background-size: cover;
     
 
     div{
+        padding-top: 50px;
+        padding-bottom: 50px;
         // position: absolute;
         // top: 10px;
         // left: 30px;

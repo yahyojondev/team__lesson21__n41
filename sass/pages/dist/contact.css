@@ -400,6 +400,11 @@ header {
   background-color: black !important;
 }
 
+.dark main #contact .contact__forms input,
+.dark main #contact .contact__forms button {
+  border: 2px solid #fff;
+}
+
 .dark * {
   color: white !important;
 }
@@ -467,6 +472,10 @@ img {
   background-size: cover;
 }
 
+.hero__container div {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .hero__container div h4 {
   color: #ffd2a4;
 }
