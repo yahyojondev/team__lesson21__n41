@@ -1,44 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME</title>
-    <link rel="stylesheet" href="css/home.min.css" />
-  </head>
-  <body>
-    <header id="navbar">
-      <nav class="container">
-        <div class="navbar">
-            <img src="" alt="" class="navbar__img">
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section id="hero">
-        <div class="container">
-          <a class="hero__link" href="pages/about.html">Learn more</a>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="container">
-          <div class="advantages__header">
-            <h6>sub-headline</h6>
-            <h2>a church that's relevant</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME</title>
+  <link rel="stylesheet" href="css/home.min.css" />
+</head>
+<body>
+  <button id="backtop">
+    <a href="#">
+      <img src="images/backtop.svg" alt="backtop">
+    </a>
+  </button>
+  <header id="navbar">
+    <nav class="container">
+      <div class="navbar">
+        <img  class="navbar__img" src="images/headerlogo.svg" alt="logo">
+        <button id="mode-btn">
+          <img class="mode__img" src="images/dark.svg" alt="dark" />
+        </button>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <ul class="navbar__item__list">
+              <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+              <li class="navbar__item"><a href="./pages/about.html" class="navbar__link">About us</a></li>
+              <li class="navbar__item"><a href="./pages/sermon.html" class="navbar__link">Sermon</a></li>
+              <li class="navbar__item"><a href="./pages/blog.html" class="navbar__link">Blog</a></li>
+            </ul>
+
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__btn" href="./pages/contact.html">Contact us</a>
+          </li>
+        </ul>
+        <button id="navbar-open">
+          <img class="navbar__img" src="images/menu.svg" alt="menu" />
+        </button>
+      </div>
+    </nav>
+  </header>
+  <ul id="navbar-responsive">
+    <button id="navbar-close">
+       <img src="images/close.svg" alt="logo">
+    </button>
+    <li class="navbar__toogle__item"><a href="#" class="navbar__link">Home</a></li>
+    <li class="navbar__toogle__item"><a href="./pages/about.html" class="navbar__link">About us</a></li>
+    <li class="navbar__toogle__item"><a href="./pages/sermon.html" class="navbar__link">Sermon</a></li>
+    <li class="navbar__toogle__item"><a href="./pages/blog.html" class="navbar__link">Blog</a></li>
+    <li class="navbar__toogle__item"><a href="./pages/contact.html" class="navbar__link">Contact us</a></li>
+  </ul>
+  <main>
+    <section id="home">
+       <div class="container">
+           <div class="home__wrapper">
+            <h6>Welcome to our CHURCH</h6>
+            <h2>Become a part of our community</h2>
+            <button>Learn more</button>
+            <div class="home__wrapper__text__img">
+              <img src="images/line.svg" alt="line">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+            </div>
+           </div>
+       </div>
+    </section>
+    <section id="relevant">
+       <div class="container">
+          <div class="relevant__wrapper">
+              <div class="relevant__wrapper__header">
+                <h6>sub-headline</h6>
+                <h2>a church that's relevant</h2>
+              </div>
+              <div class="relevant__wrapper__cards">
+                 <div class="relevant__wrapper__card">
+                    <div class="relevant__wrapper__card__content">
+                      <img src="images/relevnt.logo.1.svg" alt="logo">
+                      <h3 class="relevant__title">About us</h3>
+                      <p class="relevant__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                 </div>
+                 <div class="relevant__wrapper__card">
+                    <div class="relevant__wrapper__card__content">
+                      <img src="images/relevant.logo.2.svg" alt="logo">
+                      <h3>About us</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                 </div>
+                 <div class="relevant__wrapper__card">
+                    <div class="relevant__wrapper__card__content">
+                      <img src="images/relevant.logo.3.svg" alt="logo">
+                      <h3>About us</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                 </div>
+              </div>
           </div>
+       </div>
+    </section>
+    <section id="celebrate">
+
+        <div class="compassion container-238">
+      <div class="compassion__infos">
+        <h6>SUB-HEADLINE</h6>
+        <h2>love and compassion</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+      </div>
+      <div class="compassion__cards">
+        <div>
+          <a href="#">Read more</a>
+          <img src="../images/a-bearded-man-praying.png" alt="" />
         </div>
-      </section>
-      <section class="upcoming__sermons">
+        <div>
+          <a href="#">Read more</a>
+          <img src="../images/man-and-woman-reading-book.png" alt="" />
+        </div>
+        <div>
+          <a href="#">Read more</a>
+          <img src="../images/people-sitting.png" alt="" />
+        </div>
+      </div>
+      <div class="compassion__bottom">
+        <h6>our mission & vision</h6>
+        <h2>celebrate WITH US</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a href="#">
+            Read More <span><img src="../images/Shape.svg" alt=""></span>
+        </a>
+      </div>
+    </div>
+    </section>
+    <section id="our">
+       <div class="container">
+           <div class="our__wrapper">
+              <div class="our__wrapper__header">
+                <h6>Watch and listen</h6>
+                <h2>THE benefits of joining our mosque</h2>
+              </div>
+              <div class="our__wrapper__cards">
+                  <div class="our__wrapper__card__1">
+                        <div class="our__wrapper__card__content content__1">
+                          <h3 class="our__title">WATCH AND LISTEN TO OUR SERMONS</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                        </div>
+                  </div>
+                  <div class="our__wrapper__card__2">
+                        <div class="our__wrapper__card__content">
+                          <h3 class="our__title">WATCH AND LISTEN TO OUR SERMONS</h3>
+                        </div>
+                  </div>
+                  <div class="our__wrapper__card__3">
+                        <div class="our__wrapper__card__content">
+                          <h3 class="our__title">WATCH AND LISTEN TO OUR SERMONS</h3>
+                        </div>
+                  </div>
+                  <div class="our__wrapper__card__4">
+                        <div class="our__wrapper__card__content">
+                          <h3 class="our__title">WATCH AND LISTEN TO OUR SERMONS</h3>
+                        </div>
+                  </div>
+              </div>
+           </div>
+       </div>
+    </section>
+    <section id="watch">
         <div class="container">
-          <div class="upcoming__sermons__header">
-            <h6>Upcoming SERMONS</h6>
-            <h2>join us and become part of something great</h2>
-          </div>
-          <button class="register__btn">Register</button>
+           <div class="watch__wrapper">
+              <div class="watch__wrapper__header">
+                <h6>Upcoming SERMONS</h6>
+                <h2>join us and become part of something great</h2>
+              </div>
+              <div class="watch__wrapper__boxs">
+                <div class="watch__wrapper__left__box">
+                  <div class="watch__wrapper__left__box__content">
+                    <h6>Upcoming Event</h6>
+                    <h2>WATCH AND LISTEN TO OUR SERMONS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <ul class="watch__list">
+                      <li class="watch__list__item"><img src="images/our.left.svg" alt="icon"><span>Friday 23:39 IST Saturday 11:20 ISD</span></li>
+                      <li class="watch__list__item"><img src="images/our.left2.svg" alt="icon"><span>No 233 Main St. New York, United States</span></li>
+                    </ul>
+                    <button>Register</button>
+                  </div>
+                  <sup><code>20</code><p>JULY</p></sup>
+                </div>
+                <div class="watch__wrapper__right__box">
+                   <img src="images/our.right.png" alt="img">
+                 <div class="watch__nav">
+                  <a href="#">View all Sermons</a>
+                  <img src="images/celebtrate.right.nav.svg" alt="">
+                </div>
+               </div>
+              </div>
+           </div>
         </div>
-      </section>
-    </main>
-    <footer></footer>
-    <script src="js/main.js"></script>
-  </body>
+    </section>
+    <section id="world">
+       <div class="container">
+         <div class="world__wrapper">
+            <div class="world__wrapper__top">
+                <div class="world__wrapper__top__left">
+                   <h2>We want to serve the world around us</h2>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+                   <button>Visit</button>
+                </div>
+                <div class="world__wrapper__top__right">
+                   <img src="images/world.rigth.svg" alt="headphone">
+                </div>
+            </div>
+         </div>
+         <div class="world__wrapper__bottom">
+              <!-- bgcolor berasan yahyo  -->
+        </div>
+       </div>
+    </section>
+    <section id="share">
+       <div class="container">
+         <div class="share__wrapper">
+            <div class="share__wrapper__header">
+               <h6>Read our Blog</h6>
+               <h2>SHARE, INSPIRE, INNOVATE</h2>
+            </div>
+            <div class="share__wrapper__cards">
+                <div class="share__wrapper__card">
+                  <div class="share__wrapper__card__top">
+                        <h6>Relationship</h6>
+                        <h3>WATCH AND LISTEN TO OUR SERMONS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <p>By Mathew Johnson By Mathew Johnson</p>
+                  </div>
+                </div>
+                <div class="share__wrapper__card">
+                  <div class="share__wrapper__card__top">
+                        <h6>Relationship</h6>
+                        <h3>WATCH AND LISTEN TO OUR SERMONS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <p>By Mathew Johnson By Mathew Johnson</p>
+                  </div>        
+                </div>
+                <div class="share__wrapper__card">
+                  <div class="share__wrapper__card__top">
+                        <h6>Relationship</h6>
+                        <h3>WATCH AND LISTEN TO OUR SERMONS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <p>By Mathew Johnson By Mathew Johnson</p>
+                  </div>
+                </div>
+                <div class="share__wrapper__card">
+                  <div class="share__wrapper__card__top">
+                        <h6>Relationship</h6>
+                        <h3>WATCH AND LISTEN TO OUR SERMONS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <p>By Mathew Johnson By Mathew Johnson</p>
+                  </div>
+                </div>
+            </div>
+         </div>
+       </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="container">
+       <div class="wrapper">
+        <div class="wrapper__left">
+          <img src="images/footer.logo.svg" alt="logo" class="wrapper__left__img">
+          <a href="" class="wrapper__left__link">© Copyright Finsweet 2022</a>
+          <ul class="wrapper__left__list">
+            <li class="wrapper__item"><a href="#" class="wrapper__left__link">(480) 555-0103</a></li>
+            <li class="wrapper__item"><a href="#" class="wrapper__left__link">4517 Washington Ave. </a></li>
+            <li class="wrapper__item"><a href="#" class="wrapper__left__link">finsweet@example.com</a></li>
+          </ul>
+        </div>
+        <div class="wrapper__middle">
+           <ul class="wrapper__middle__list">
+              <li class="wrapper__middle__item">
+                 <p class="wrapper__text">Quicklinks</p>
+                 <ul class="wrapper__middle__item__list">
+                  <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__middle__link">About us</a></li>
+                  <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__middle__link">Sermons</a></li>
+                  <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__middle__link">Events</a></li>
+                  <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__middle__link">Blog</a></li>
+                 </ul>
+              </li>
+              <li class="wrapper__middle__item">
+                 <p class="wrapper__text"> Connect </p>
+                 <ul class="wrapper__middle__item__list__imgs">
+                  <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__link">
+                    <img src="images/footer.facebook.svg" alt="logo">
+                  </a></li>
+                  <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__link">
+                    <img src="images/footer.twitter.svg" alt="logo">
+                  </a></li>
+                  <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__link">
+                    <img src="images/footer.in.svg" alt="logo">
+                  </a></li>
+                 </ul>
+              </li>
+           </ul>
+        </div>
+        <div class="wrapper__right">
+           <h2 class="wrapper__right__title">Subscribe to get Latest Updates and News</h2>
+           <div class="wrapper__right__form">
+            <input type="email" name="email" id="email" placeholder="Yourmail@gmail.com">
+            <button class="wrapper__right__btn">Subscribe</button>
+           </div>
+        </div>
+       </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
 </html>

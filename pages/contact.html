@@ -3,9 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CONTACT</title>
+    <title>CONTACT | Asilbek</title>
+    <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
+    <header id="navbar">
+      <nav class="container">
+        <div class="navbar">
+          <img  class="navbar__img" src="../images/headerlogo.svg" alt="logo">
+          <button id="mode-btn">
+            <img class="mode__img" src="../images/dark.svg" alt="dark" />
+          </button>
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <ul class="navbar__item__list">
+                <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">About us</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Sermon</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Blog</a></li>
+              </ul>
+              
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__btn" href="./pages/contact.html">Contact us</a>
+            </li>
+          </ul>
+          <button id="navbar-open">
+            <img class="navbar__img" src="../images/menu.svg" alt="menu" />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <ul id="navbar-responsive">
+      <button id="navbar-close">
+        <img src="images/close.svg" alt="logo">
+      </button>
+      <li class="navbar__toogle__item"><a href="#" class="navbar__link">Home</a></li>
+      <li class="navbar__toogle__item"><a href="#" class="navbar__link">About us</a></li>
+      <li class="navbar__toogle__item"><a href="#" class="navbar__link">Sermon</a></li>
+      <li class="navbar__toogle__item"><a href="#" class="navbar__link">Blog</a></li>
+      <li class="navbar__toogle__item"><a href="#" class="navbar__link">Contact us</a></li>
+    </ul>
+    <main>
+      <section id="hero">
+        <!-- <img src="../images/contact__image.png" alt="" /> -->
+        <div class="hero__container container">
+          <div class="hero__infos">
+            <h4>Contact</h4>
+            <h1>Get in touch with our CHURCH</h1>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact container">
+          <div class="contact__forms">
+            <label for="text , email">Contact Form:</label>
+            <input type="text" id="text" placeholder="Your full Name" />
+            <input type="email" id="email" placeholder="Your Email" />
+            <input type="text" id="text" placeholder="Query Related" />
+            <textarea
+              name="message"
+              id="report"
+              cols="10"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit">SEND MESSAGE</button>
+          </div>
+          <div class="contact__infos">
+            <p>Address</p>
+            <h3>NH 234 Public Square San Francisco 65368</h3>
+            <p>Contact Details</p>
+            <h3>(480) 555-0103</h3>
+            <h3>finsweet@example.com</h3>
+            <p>Find us here</p>
+            <div class="contact__medias">
+              <a href="#">
+                <img src="../images/Negative.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="../images/twitter.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="../images/linkedin.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+         <div class="wrapper">
+          <div class="wrapper__left">
+            <img src="../images/footer.logo.svg" alt="logo" class="wrapper__left__img">
+            <a href="" class="wrapper__left__link">© Copyright Finsweet 2022</a>
+            <ul class="wrapper__left__list">
+              <li class="wrapper__item"><a href="#" class="wrapper__left__link">(480) 555-0103</a></li>
+              <li class="wrapper__item"><a href="#" class="wrapper__left__link">4517 Washington Ave. </a></li>
+              <li class="wrapper__item"><a href="#" class="wrapper__left__link">finsweet@example.com</a></li>
+            </ul>
+          </div>
+          <div class="wrapper__middle">
+             <ul class="wrapper__middle__list">
+                <li class="wrapper__middle__item">
+                   <p class="wrapper__text">Quicklinks</p>
+                   <ul class="wrapper__middle__item__list">
+                    <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__middle__link">About us</a></li>
+                    <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__middle__link">Sermons</a></li>
+                    <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__middle__link">Events</a></li>
+                    <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__middle__link">Blog</a></li>
+                   </ul>
+                </li>
+                <li class="wrapper__middle__item">
+                   <p class="wrapper__text"> Connect </p>
+                   <ul class="wrapper__middle__item__list__imgs">
+                    <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__link">
+                      <img src="../images/footer.facebook.svg" alt="logo">
+                    </a></li>
+                    <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__link">
+                      <img src="../images/footer.logo.svg" alt="logo">
+                    </a></li>
+                    <li class="wrapper__middle__item__list__item"><a href="#" class="wrapper__link">
+                      <img src="../images/footer.in.svg" alt="logo">
+                    </a></li>
+                   </ul>
+                </li>
+             </ul>
+          </div>
+          <div class="wrapper__right">
+             <h2 class="wrapper__right__title">Subscribe to get Latest Updates and News</h2>
+             <div class="wrapper__right__form">
+              <input type="email" name="email" id="email" placeholder="Yourmail@gmail.com">
+              <button class="wrapper__right__btn">Subscribe</button>
+             </div>
+          </div>
+         </div>
+      </div>
+    </footer>
     <script src="../js/main.js"></script>
   </body>
 </html>
