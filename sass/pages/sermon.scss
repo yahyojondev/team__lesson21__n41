@@ -1,2 +1,55 @@
 @use "../global";
 @use "../components/sermon-card";
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+
+.main__left {
+    img {
+        margin-top: 128px;
+    }
+}
+
+body {
+    background: var(--Grey, #F5F2F0);
+}
+
+.main__title {
+    h6 {
+        @include mxn.title;
+        margin-top: 32px;
+        color: var.$primary-color;
+    }
+
+    h2 {
+        margin-top: 50px;
+    }
+}
+
+#text {
+    @extend %text;
+    max-width: 630px;
+    height: 72px;
+}
+
+.text2 {
+    @extend %text;
+    max-width: 608px;
+    height: 108px;
+}
+
+.line {
+    width: 2.464px;
+    height: 120px;
+    flex-shrink: 0;
+    background: var.$primary-color;
+}
+
+.text3 {
+    @extend %text;
+}
+
+.main__box {
+    display: inline-block;
+    padding: 40px;
+    border-color: var.$white-color;
+}

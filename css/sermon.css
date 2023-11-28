@@ -24,7 +24,7 @@ ul {
   list-style-type: none;
 }
 
-.container-366, .container-238, .container {
+.container-128, .container-366, .container-238, .container {
   margin-left: auto;
   margin-right: auto;
   padding-right: 20px;
@@ -41,4 +41,150 @@ ul {
 
 .container-366 {
   max-width: 808px;
+}
+
+.container-128 {
+  max-width: 1284px;
+}
+.main__left img {
+  margin-top: 128px;
+}
+
+.main__title h6 {
+  margin-top: 32px;
+}
+
+.main__title h2 {
+  margin-top: 16px;
+  font-size: 46px;
+  max-width: 630px;
+}
+
+#text {
+  max-width: 630px;
+  height: 72px;
+  margin-top: 16px;
+}
+
+.text2 {
+  max-width: 608px;
+  height: 108px;
+  margin-top: 30px;
+  margin-left: 20px;
+  line-height: 150%;
+  font-size: 24px;
+}
+
+.line {
+  width: 2.464px;
+  height: 120px;
+  flex-shrink: 0;
+  background: #FFD2A4;
+  position: relative;
+  bottom: 110px;
+}
+
+.text3 {
+  max-width: 630px;
+  height: 72px;
+  position: relative;
+  bottom: 60px;
+  line-height: 24px;
+}
+
+#events {
+  display: flex;
+}
+
+.main__box {
+  display: inline-block;
+  padding: 40px;
+  padding-right: 130px;
+  background: #F7F8FA;
+  margin-top: 128px;
+  margin-left: 128px;
+}
+
+.main__box h4 {
+  font-family: Roboto Condensed;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.order,
+.search,
+.time {
+  display: flex;
+  gap: 10px;
+}
+
+.order img {
+  position: relative;
+  bottom: 25px;
+}
+
+.search p,
+.time p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 184px;
+  height: 48px;
+  margin-bottom: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding-right: 222px;
+  padding: 8px 222px 8px 2px;
+  border: none;
+  border-bottom: black;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 12px;
+  opacity: 0.6;
+}
+
+.email {
+  margin-top: 40px;
+}
+
+.line2 {
+  width: 412px;
+  height: 1px;
+  opacity: 0.2;
+  background: #232536;
+}
+
+.Register {
+  border: none;
+  display: inline-flex;
+  padding: 24px 64px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  background: var(--primary, #FFD2A4);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-top: 32px;
 }

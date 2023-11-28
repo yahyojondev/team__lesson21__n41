@@ -22,3 +22,7 @@
   @extend %container;
   max-width: func.container(1500, 366);
 }
+.container-128{
+@extend %container;
+max-width: func.container(1500, 128);
+}
