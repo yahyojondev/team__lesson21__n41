@@ -129,7 +129,7 @@ ul {
   bottom: 50px;
 }
 
-.container-366, .container-238, .container {
+.container-128, .container-366, .container-238, .container {
   margin-left: auto;
   margin-right: auto;
   padding-right: 20px;
@@ -146,6 +146,10 @@ ul {
 
 .container-366 {
   max-width: 808px;
+}
+
+.container-128 {
+  max-width: 1284px;
 }
 
 header {
@@ -474,7 +478,7 @@ header {
   background-color: black;
 }
 
-.dark * {
+.dark .dark * {
   color: white !important;
 }
 

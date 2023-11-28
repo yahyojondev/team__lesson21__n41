@@ -129,7 +129,7 @@ ul {
   bottom: 50px;
 }
 
-.container-366, .container-238, .container {
+.container-128, .container-366, .container-238, .container {
   margin-left: auto;
   margin-right: auto;
   padding-right: 20px;
@@ -146,6 +146,10 @@ ul {
 
 .container-366 {
   max-width: 808px;
+}
+
+.container-128 {
+  max-width: 1284px;
 }
 
 header {
@@ -434,4 +438,384 @@ header {
   gap: 16px;
   border-radius: 12px;
   background: var(--primary, #FFD2A4);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.bg-img {
+  width: 100%;
+  height: 432px;
+  background-image: url(/images/U_b-eSviHvs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-img .bg-img-title {
+  padding-top: 160px;
+  padding-left: 60px;
+}
+.bg-img .bg-img-title .bg-text {
+  color: #232536;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.bg-img .bg-img-title .bg-title {
+  margin-top: 16px;
+  color: #232536;
+  /* Heading h2 */
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+
+.maket-title {
+  text-align: center;
+  margin-top: 120px;
+}
+.maket-title .maket-text {
+  color: #161722;
+  /* Label 02 */
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.maket-title .title-h2 {
+  margin-top: 16px;
+  color: #161722;
+  text-align: center;
+  /* Heading h2 */
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+
+.box-maket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 64px;
+}
+.box-maket .card-maket {
+  width: 435px;
+  height: 512px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #FFF5EB;
+}
+.box-maket .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.box-maket .num {
+  margin-top: 32px;
+  margin-left: 378px;
+  color: #161722;
+  /* Heading h5 */
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+.box-maket .moon {
+  margin-left: 378px;
+  color: #161722;
+  /* Label 02 */
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.box-maket .card-text {
+  margin-left: 89px;
+  background: var(--Gradient, linear-gradient(110deg, #A54E2B -53.83%, #DC9853 62.61%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Cap 03 */
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+.box-maket .card-title {
+  margin-top: 16px;
+  margin-left: 89px;
+  width: 210px;
+  color: #161722;
+  /* Heading h5 */
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+.box-maket .box-text {
+  margin-top: 16px;
+  margin-left: 89px;
+  color: #161722;
+  /* Paragraph */
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.box-maket .data {
+  margin-top: 32px;
+  margin-left: 30px;
+  color: #161722;
+  /* Paragraph */
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.box-maket .icon {
+  margin-top: 40px;
+  margin-left: 89px;
+}
+.box-maket .btn-maket {
+  margin-top: 32px;
+  margin-left: 89px;
+  width: 156px;
+  height: 65px;
+  background: #161722;
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+}
+.box-maket .btn-maket:hover {
+  color: #d68c2b;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+  .box-maket {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .box-maket {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .box-maket {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .box-maket {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .foto {
+    width: 435px;
+    height: 256px;
+  }
+}
+.maket-link {
+  position: relative;
+  top: 48px;
+  left: 1080px;
+  color: #161722;
+  /* Label 01 */
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+}
+.maket-link:hover {
+  color: #ecb67f;
+}
+
+.paragref {
+  margin-top: 208px;
+  color: #161722;
+  text-align: center;
+  /* Heading h2 */
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+
+.sermon-box {
+  margin-top: 64px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.sermon-card {
+  width: 302px;
+  height: 454px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #FFF5EB;
+}
+
+.big-title {
+  color: #161722;
+  /* Heading h5 */
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-left: 251px;
+}
+
+.sermon-moon {
+  color: #161722;
+  /* Label 02 */
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 251px;
+}
+
+.sermon-paragrif {
+  background: var(--Gradient, linear-gradient(110deg, #A54E2B -53.83%, #DC9853 62.61%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Cap 03 */
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.big-title-1 {
+  width: 210px;
+  color: #161722;
+  /* Heading h5 */
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-left: 40px;
+}
+
+.sermon-text {
+  color: #161722;
+  /* Paragraph */
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-top: 16px;
+  margin-left: 40px;
+}
+
+.tent {
+  color: #161722;
+  /* Paragraph */
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-top: 32px;
+  margin-left: 20px;
+}
+
+.medium {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons {
+  margin-top: 34px;
+  margin-left: 42px;
+}
+
+@media screen and (max-width: 900px) {
+  .sermon-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sermon-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sermon-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sermon-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sermon-card {
+    position: relative;
+    left: 69px;
+  }
 }
