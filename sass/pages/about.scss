@@ -3,12 +3,91 @@
 @use "../utils/helpers";
 @use "../utils/mixins";
 @use "../global";
+header {
+    padding-top: 26px;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: #0D0D0D;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.navbar-shrink {
+    height: 80px;
+    box-shadow: 0px 0px 5px 5px #FFD2A4;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__img {
+        @media(min-width:1000px) {
+            max-width: 132px;
+        }
+    }
+
+    &__list {
+        display: none;
+        align-items: center;
+        gap: 400px;
+
+        @media(min-width:1300px) {
+            display: flex;
+        }
+    }
+
+    &__item__list {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+    }
+
+    &__link {
+        font-size: 16px;
+        color: #FFF;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        opacity: 0.9;
+    }
+
+    &__btn {
+        width: 100%;
+        border-radius: 12px;
+        background: var(--primary, #FFD2A4);
+        padding: 20px 48px;
+        align-items: center;
+        color: var(--Black, #1C1D28);
+        text-align: center;
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        text-transform: uppercase;
+        backdrop-filter: blur(40px);
+    }
+}
+
+.dark {
+    background-color: black;
+}
+
+.dark * {
+    color: white !important;
+}
+
+
 
 .about__image
 {
     width: 100%;
     background: url(../../images/about__images/hero-img.png);
-    height: 380px;
+    background-size: cover;
+    height: 420px;
     @media (max-width:287px)
     {
     height: 420px;
@@ -17,7 +96,7 @@
 .about__image__page
 {
     // background-color: red;
-    padding-top: 150px;
+    padding-top: 180px;
     @media (max-width:424px)
     {
         padding-top: 100px;
@@ -28,7 +107,7 @@
     }
    p
    {
-    // color: $black-color;
+    color: black !important;
     font-family: Roboto Condensed;
     font-size: 16px;
     font-style: normal;
@@ -43,7 +122,7 @@
    }
    h2
    {
-    // color: $black-color;
+    color: black !important;
     font-family: Roboto Condensed;
     font-size: 48px;
     font-weight: 700;
