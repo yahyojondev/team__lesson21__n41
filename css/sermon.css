@@ -346,8 +346,8 @@ header {
   width: 30px;
   height: 30px;
 }
-/* 
-.dark header, main, footer{
+
+/* .dark header, main, footer{
 background-color: #0D0D0D;
 color: black;
 }
@@ -586,8 +586,17 @@ label {
 .events {
   padding-top: 100px;
   padding-bottom: 128px;
+}
+.events__container{
+margin-top: 128px;
+margin-bottom: 128px;
+}
+    .events__cards{
+    display: flex;
+    gap: 24px;
 
-  h1 {
+    }
+  .events__container h1 {
     text-align: center;
     color: var(--Black, #161722);
     text-align: center;
@@ -602,31 +611,32 @@ label {
     text-transform: uppercase;
   }
 
-  &__cards {
+  .events__card {
     margin-top: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-
+  }
 
 
     .events__card {
       margin-top: 70px;
       width: 300px;
       max-width: 100%;
-      border: 2px solid red;
+      border: 2px solid white;
+      border:2px solid rgba(0, 0, 0, 0.75);
       padding-left: 40px;
       padding-bottom: 80px;
 
-
+    }
       .card__top {
         margin-top: 24px;
         width: 30px;
         margin-left: 170px;
-
-        p {
+      }
+        .events__card p {
           color: var(--Black, #161722);
           font-size: 24px;
           font-weight: 700;
@@ -634,15 +644,15 @@ label {
           text-transform: uppercase;
         }
 
-        h4 {
+        .events__card  h4 {
           color: #161722;
           font-size: 16px;
           font-weight: 400;
           text-transform: uppercase;
         }
-      }
+      
 
-      h6 {
+      .events__card   h6 {
         margin-top: 9px;
         font-size: 12px;
         font-weight: 700;
@@ -651,7 +661,7 @@ label {
         color: #DC9853;
       }
 
-      h2 {
+      .events__card h2 {
         margin-top: 16px;
         max-width: 210px;
         width: 100%;
@@ -662,7 +672,7 @@ label {
         text-transform: uppercase;
       }
 
-      p {
+      .events__card  p {
         margin-top: 16px;
         max-width: 214px;
         width: 100%;
@@ -677,9 +687,9 @@ label {
         margin-top: 32px;
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 16px;}
 
-        p {
+        .card__time p {
           width: 100%;
           max-width: 137px;
           color: #161722;
@@ -687,11 +697,9 @@ label {
           font-weight: 400;
           line-height: 24px;
         }
-      }
+      
 
-    }
-
-    @media(min-width: 650px) {
+    /* @media(min-width: 650px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
@@ -703,9 +711,8 @@ label {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       align-items: center;
       justify-content: space-between;
-    }
-  }
-}
+    } */
+  
 #footer {
   padding: 64px 0px 64px;
   background: #161722;
